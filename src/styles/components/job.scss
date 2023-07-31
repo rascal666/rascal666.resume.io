@@ -1,0 +1,25 @@
+@import "../variables";
+
+.works{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: $indent-medium;
+  margin-top: $indent-block;
+}
+
+.work{
+  &-right{
+    //display: grid;
+    //justify-items: end;
+  }
+
+  &__title {
+    margin-bottom: $indent-small;
+    font-weight: bolder;
+    font-size: 26px;
+  }
+
+  &__subtitle{
+    margin-top: $indent-paragraph;
+  }
+}

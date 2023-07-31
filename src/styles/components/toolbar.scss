@@ -1,0 +1,14 @@
+@import "variables";
+
+.toolbar{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: start;
+  grid-gap: 24px;
+
+  &__item{
+    &:active{
+
+    }
+  }
+}
