@@ -1,13 +1,41 @@
+
+
+@font-face {
+  font-family: 'BadScript';
+  src: local('BadScript'),
+  url('./fonts/BadScript/BadScript-Regular.ttf') format('truetype'),
+  url('./fonts/BadScript/BadScript-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/BadScript/BadScript-Regular.woff2') format('woff2'),
+  url('./fonts/BadScript/BadScript-Regular.woff') format('woff'),
+  url('./fonts/BadScript/BadScript-Regular.svg#BadScript-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B612Mono';
+  src: local('B612Mono'),
+  url('./fonts/B612Mono/B612Mono-BoldItalic.ttf') format('truetype'),
+  url('./fonts/B612Mono/B612Mono-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/B612Mono/B612Mono-BoldItalic.woff2') format('woff2'),
+  url('./fonts/B612Mono/B612Mono-BoldItalic.woff') format('woff'),
+  url('./fonts/B612Mono/B612Mono-BoldItalic.svg#BadScript-Regular') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'BadScript';
+  font-weight: normal;
+  font-style: normal;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'BadScript';
+  font-weight: normal;
+  font-style: normal;
 }

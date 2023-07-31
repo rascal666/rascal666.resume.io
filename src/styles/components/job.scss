@@ -1,16 +1,13 @@
 @import "../variables";
 
-.works{
+
+.job{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   grid-gap: $indent-medium;
-  margin-top: $indent-block;
-}
-
-.work{
-  &-right{
-    //display: grid;
-    //justify-items: end;
+ 
+  @media ($media-tablet) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 
   &__title {
@@ -21,5 +18,9 @@
 
   &__subtitle{
     margin-top: $indent-paragraph;
+
+    @media ($media-mobile) {
+      margin-top: $indent-paragraph/2;
+    }
   }
 }

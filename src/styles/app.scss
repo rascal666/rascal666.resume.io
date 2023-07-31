@@ -1,0 +1,25 @@
+@import './variables';
+@import './normalize.css';
+
+.app{
+  display: grid;
+  grid-gap: $indent-section;
+  padding: $indent-medium 0;
+  color: $base-color;
+  background: $base-background;
+  font-size: 24px;
+  line-height: 1.7;
+
+
+  @media ($media-tablet) {
+    padding: $indent-small 0;
+    grid-gap: $indent-medium;
+  }
+
+  @media ($media-mobile) {
+    font-size: 16px;
+    grid-gap: $indent-block/2;
+  }
+}
+
+

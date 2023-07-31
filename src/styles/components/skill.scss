@@ -1,0 +1,39 @@
+@import "../variables";
+
+.skill{
+  display: grid;
+  grid-gap: $indent-small/2;
+
+  &__block{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: $indent-small;
+
+    @media ($media-tablet) {
+      grid-gap: $indent-small/3;
+    }
+  }
+
+  &__scale{
+    width: 160px;
+    height: 26px;
+    border-radius: 20px;
+    border: 2px solid $base-color;
+    position: relative;
+    overflow: hidden;
+
+    @media ($media-tablet) {
+      width: 70px;
+      height: 16px;
+    }
+
+    &-inside{
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 20px;
+      background: $base-accent;
+    }
+  }
+}

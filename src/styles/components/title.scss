@@ -1,0 +1,22 @@
+@import "../variables";
+
+.title{
+  margin-bottom: $indent-block;
+  color: transparent;
+  -webkit-text-stroke: 2px $base-accent;
+  text-stroke: 2px $base-accent;
+  text-shadow: 6px 6px 16px #56a6967d;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: $size-subtitle;
+  font-family: B612Mono;
+  
+  @media ($media-tablet) {
+    margin-bottom: $indent-block / 2;
+    text-align: left !important;
+    font-size: $size-heading-mobile;
+  }
+  @media ($media-mobile) {
+    margin-bottom: $indent-small;
+  }
+}

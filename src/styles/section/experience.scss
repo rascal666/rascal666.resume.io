@@ -1,0 +1,19 @@
+@import "../variables";
+
+.experience{
+  @include contain;
+  position: relative;
+
+  &__title{
+    text-align: right;
+  }
+
+  &__img{
+    max-width: 870px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -160px;
+    z-index: 0;
+  }
+}

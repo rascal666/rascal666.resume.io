@@ -1,0 +1,41 @@
+$base-color: #F1F1F1;
+$base-accent: #56A696;
+$base-background: #151E27;
+
+$indent-section: 160px;
+$indent-block: 120px;
+$indent-medium: 80px;
+$indent-small: 40px;
+$indent-paragraph: 24px;
+
+$size-base: 24px;
+$size-heading:140px;
+$size-heading-desc:100px;
+$size-heading-laptop:60px;
+$size-heading-tablet:90px;
+$size-heading-mobile:40px;
+$size-subtitle: 120px;
+$size-tablet: 60px;
+
+$media-desc: (max-width: 1550px);
+$media-laptop: (max-width: 1140px);
+$media-tablet: (max-width: 880px);
+$media-mobile: (max-width: 680px);
+$media-mobile: (max-width: 680px);
+
+
+
+@mixin contain {
+  max-width: 1920px;
+  width: -webkit-fill-available;
+  margin: auto;
+  padding: 0 $indent-medium;
+
+  @media ($media-tablet) {
+    padding: 0 $indent-small;
+  }
+  @media ($media-mobile) {
+    padding: 0 $indent-paragraph;
+  }
+}
+

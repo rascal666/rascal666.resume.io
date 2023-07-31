@@ -1,0 +1,48 @@
+
+@import "../variables";
+
+.letters{
+  margin-top: $indent-section;
+  display: flex;
+  width: 828px;
+  flex-wrap: wrap;
+  line-height: initial;
+
+  @media ($media-desc) {
+    margin-top: $indent-block;
+    width: 640px;
+  }
+  @media ($media-laptop) {
+    margin-top: $indent-block;
+    width: 711px;
+  }
+  @media ($media-tablet) {
+    margin-top: $indent-medium;
+    width: 580px;
+  }
+  @media ($media-mobile) {
+    margin: $indent-small 0 $indent-block 0 ;
+    width: 255px;
+  }
+}
+.letter{
+  color: #56A696;
+  text-shadow: 6px 6px 16px #56a6967d;
+  font-family: B612Mono;
+  font-size: $size-heading;
+  display: block;
+  transition-duration: .5s;
+
+  @media ($media-desc) {
+    font-size: $size-heading-desc;
+  }
+  @media ($media-laptop) {
+    font-size: $size-heading-laptop;
+  }
+  @media ($media-tablet) {
+    font-size: $size-heading-tablet;
+  }
+  @media ($media-mobile) {
+    font-size: $size-heading-mobile;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../variables";
+
+.work{
+  @include contain;
+
+  &__text{
+    max-width: 600px;
+    line-height: 40px;
+  }
+
+  &__accent{
+    color: $base-accent;
+  }
+}

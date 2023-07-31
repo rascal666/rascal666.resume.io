@@ -1,4 +1,4 @@
-@import "variables";
+@import "src/styles/variables";
 
 .toolbar{
   display: grid;
@@ -7,8 +7,14 @@
   grid-gap: 24px;
 
   &__item{
-    &:active{
 
+    &:hover{
+      cursor: pointer;
+      color: $base-accent;
+      transition-duration: .3s;
     }
   }
 }
+
+
+

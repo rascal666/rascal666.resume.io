@@ -1,0 +1,43 @@
+@import "../variables";
+
+.home{
+  @include contain;
+  display: grid;
+  position: relative;
+
+  &__heading{
+    margin-top: $indent-section;
+    color: $base-accent;
+    text-shadow: 6px 6px 16px #56a6967d;
+    font-family: B612Mono;
+    font-size: 140px;
+  }
+
+  &__subtitle{
+    margin-top: $indent-medium;
+    @media ($media-desc) {
+      margin-top: $indent-small;
+    }
+  }
+
+  &__img{
+    max-width: 820px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: -59px;
+    z-index: 0;
+
+    @media ($media-desc) {
+      max-width: 617px;
+      top: 0px;
+    }
+    @media ($media-tablet) {
+      max-width: 340px;
+    }
+    @media ($media-mobile) {
+      max-width: 270px;
+      top: 90px;
+    }
+  }
+}

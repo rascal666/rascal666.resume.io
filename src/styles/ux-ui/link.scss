@@ -1,0 +1,11 @@
+@import "../variables";
+
+.styleLink{
+  text-decoration: none;
+  color: inherit;
+  &:hover{
+    cursor: pointer;
+    color: $base-accent;
+    transition-duration: 0.3s;
+  }
+}
