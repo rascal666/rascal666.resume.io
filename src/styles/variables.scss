@@ -28,7 +28,6 @@ $media-mobile: (max-width: 680px);
 @mixin contain {
   max-width: 1920px;
   width: 100%;
-  width: -webkit-fill-available;
   margin: auto;
   padding: 0 $indent-medium;
 
