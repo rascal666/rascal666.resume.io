@@ -20,9 +20,8 @@ const Home = (() => {
                     })
                 }
             </div>
-            {/*<div className='home__heading'>Frontend-developer</div>*/}
-            <div className='home__subtitle'>тут будет всё тоже самое, что и в резюме. только с картинками.</div>
-            <div  className={' home__subtitle'}>ну или почти всё :)</div>
+            <div className='home__subtitle'>Мини резюме в картинках, что бы не было так скучно :) </div>
+            {/*<div  className={' home__subtitle'}>ну или почти всё :)</div>*/}
             <img className=' home__img' src={img} alt=""/>
         </div>
     );

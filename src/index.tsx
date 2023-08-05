@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import './fonts/BadScript/BadScript-Regular.ttf'
 import './fonts/BadScript/BadScript-Regular.svg'
 import './fonts/BadScript/BadScript-Regular.woff2'
