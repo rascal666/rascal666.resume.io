@@ -11,4 +11,27 @@
   &__accent{
     color: $base-accent;
   }
+
+  &__mookAp{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 64px;
+
+    a {
+      perspective: 800px;
+
+    }
+
+    img{
+      transform: rotateY(0deg);
+      transform-origin: right center;
+      max-width: 100%;
+      transition-duration: .5s;
+
+    }
+  }
+}
+
+.WorkMocKup{
+  font-size: 18px;
 }

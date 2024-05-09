@@ -8,11 +8,11 @@ import Work from "./sections/Work";
 
 const App = () => {
     return (
-        <div className='app' >
-            <Home/>
-            <Skills/>
-            <Experience/>
-            <Work/>
+        <div className='app'>
+            <Home />
+            <Skills />
+            <Experience />
+            <Work />
         </div>
     );
 };
